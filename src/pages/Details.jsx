@@ -17,15 +17,26 @@ export const Details = () => {
         if (!item) return "";
 
         if (type === "people") {
-            return `${item.name} is a legendary figure in the Star Wars universe. Born in ${item.birth_year}, this individual stands ${item.height}cm tall and has left a lasting mark on galactic history through their unique path and characteristics.`;
+            return `${item.name} is a legendary figure in the Star Wars universe.
+             Born in ${item.birth_year}, this individual stands
+              ${item.height}cm tall and has left a 
+             lasting mark on galactic history through 
+             their unique path and characteristics.`;
         }
         
         if (type === "planets") {
-            return `${item.name} is a planet characterized by its ${item.terrain} landscape and ${item.climate} climate. With a population of ${item.population}, it serves as a vital location within its orbital sector.`;
+            return `${item.name} is a planet characterized
+             by its ${item.terrain} landscape and ${item.climate} 
+             climate. With a population of ${item.population}, 
+             it serves as a vital location within 
+             its orbital sector.`;
         }
 
         if (type === "vehicles" || type === "starships") {
-            return `The ${item.name} is a ${item.model} crafted by ${item.manufacturer}. It is designed for high performance, capable of carrying ${item.passengers} passengers across the stars.`;
+            return `The ${item.name} is a ${item.model} crafted 
+            by ${item.manufacturer}. 
+            It is designed for high performance, capable of carrying 
+            ${item.passengers} passengers across the stars.`;
         }
 
         return "A mysterious entity from a galaxy far, far away, whose full history is tucked away in the ancient Jedi archives.";
